@@ -14,6 +14,19 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+public slots:
+    void signInClicked();
+    void signUpClicked();
+    void logInClicked();
+    void registerClicked();
+    void homeClicked();
+    void myProfileClicked();
+    void friendsListClicked();
+    void friendSearchClicked();
+    void editProfileButtonClicked();
+    void mainMenuClicked();
+    void friendProfileClicked();
+    //void addFriend();
 
 private:
     Ui::MainWindow *ui;
