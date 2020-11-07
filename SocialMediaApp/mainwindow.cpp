@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->logInButton, SIGNAL(clicked()), this, SLOT(logInClicked()));
     connect(ui->signInButton, SIGNAL(clicked()), this, SLOT(signInClicked()));
     connect(ui->signUpButton, SIGNAL(clicked()), this, SLOT(signUpClicked()));
+    connect(ui->registerButton, SIGNAL(clicked()), this, SLOT(signUpClicked()));
 }
 
 MainWindow::~MainWindow()
@@ -32,3 +33,7 @@ void MainWindow::signUpClicked()
     ui->pageSwitcher->setCurrentIndex(2);
 }
 
+void MainWindow::registerClicked()
+{
+
+}

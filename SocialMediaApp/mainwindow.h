@@ -18,6 +18,7 @@ public slots:
     void signInClicked();
     void signUpClicked();
     void logInClicked();
+    void registerClicked();
 
 private:
     Ui::MainWindow *ui;
