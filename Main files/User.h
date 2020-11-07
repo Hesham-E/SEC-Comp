@@ -18,8 +18,8 @@ class User {
     const string& getUserName () const;
 
     void setEmail(string email);
-    void getPassword(string password);
-    void getUserName(string username);
+    void setPassword(string password);
+    void setUserName(string username);
 
     void changeProfile();
 };
