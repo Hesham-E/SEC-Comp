@@ -19,6 +19,7 @@ public slots:
     void signUpClicked();
     void logInClicked();
     void registerClicked();
+    void homeClicked();
 
 private:
     Ui::MainWindow *ui;
