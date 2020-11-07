@@ -1,19 +1,20 @@
+#pragma once
+
 #include <iostream>
 #include <string>
 #include <vector>
 
-class Friends {
+using namespace std
 
-    struct Friend {
+class Friends 
+{
+    private:
         int friendStrength;
         string userName;
-    }
-
-    vector <Friend> Friends;
 
     public:
-    int getFriendStrength() { return friendStrength; };
-    void setFriendStrength(int );
-    void increaseFriendStrength();
-
-}
+        Friends ();
+        Friends (int strength, string user) { friendStrength = strength, userName.assign(user); }
+        int getFriendStrength() { return friendStrength; };
+        void setFriendStrength(int strength);
+};

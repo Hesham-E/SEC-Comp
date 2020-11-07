@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <cmath>
 #include <vector>
@@ -6,6 +7,10 @@
 using namespace std;
 
 class Network {
-    vector <User> Users;
+    private:
+        vector <User> Users;
 
+    public:
+        Network();
+        const vector <User>& getUsers() const {return Users;}
 };
