@@ -6,6 +6,6 @@
 using namespace std;
 
 class Network {
-    vector <User> Users {};
+    vector <User> Users;
 
 };
