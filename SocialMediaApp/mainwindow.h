@@ -20,6 +20,10 @@ public slots:
     void logInClicked();
     void registerClicked();
     void homeClicked();
+    void myProfileClicked();
+    void friendsListClicked();
+    void friendSearchClicked();
+    void editProfileButtonClicked();
 
 private:
     Ui::MainWindow *ui;
