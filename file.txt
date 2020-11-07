@@ -1,3 +1,2 @@
 hi
-ByeHello World
-Hello my friends this is a test
+ByeHello World\n
