@@ -14,6 +14,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+public slots:
+    void signInClicked();
+    void signUpClicked();
+    void logInClicked();
 
 private:
     Ui::MainWindow *ui;
