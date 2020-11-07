@@ -5,7 +5,7 @@
 #include "Friends.h"
 #include "Post.h"
 
-sing namespace std;
+using namespace std;
 
 
 #ifndef FLIGHT
@@ -20,7 +20,7 @@ private:
         int year;
     };
     
-    struct Interests
+    struct Interest
     {
         bool soccer;
         bool volleyball;
@@ -34,7 +34,7 @@ private:
     string bio;
     
     DateofBirth birth;
-    Interst interest;
+    Interest interest;
     
     vector <Post> P;
     vector <Friends> P;
@@ -43,25 +43,20 @@ private:
     
 public:
     Profile();
-    Profile(string name, string location, string bio, int day, int month, int year, bool soccer, bool volleyball, bool netflix, bool photography, bool study);
+    Profile(string name, string location, string bio, DateofBirth birth, Interest interest, Network& net);
     
     void setName(string s) { name.assign(s); }
     void setLocation(string s) { location.assign(s); }
     void setBio(string s) { bio.assign(s); }
     void setBirth(int d, int m, int y) { birth.day = d, birth.month = m, birth.year = y; }
     void setInterest(bool b0, bool b1, bool b2, bool b3, bool b4) { interest.soccer = b0, interest.volleyball = b1, interest.netflix = b2, interest.photography = b3, interest.study = b4; }
+    void setNetwork(Network& net);
     
-    string getName() const;
-    string getLocation() const;
-    string getBio() const;
-    int getDay() const;
-    int getMonth() const;
-    int getYear() const;
-    bool getSoccer() const;
-    bool getVolleyball() const;
-    bool getNetflix() const;
-    bool getPhotography() const;
-    bool getStudy() const;
+    const string getName() const;
+    const string getLocation() const;
+    const string getBio() const;
+    const DateofBirth getBirth() const;
+    const Interest getInterest() const;
     
 };
 
