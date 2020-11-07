@@ -24,6 +24,9 @@ public slots:
     void friendsListClicked();
     void friendSearchClicked();
     void editProfileButtonClicked();
+    void mainMenuClicked();
+    void friendProfileClicked();
+    //void addFriend();
 
 private:
     Ui::MainWindow *ui;

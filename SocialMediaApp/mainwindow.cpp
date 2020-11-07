@@ -19,6 +19,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->friendSearchButton, SIGNAL(clicked()), this, SLOT(friendSearchClicked()));
     connect(ui->editProfileButton, SIGNAL(clicked()), this, SLOT(editProfileButtonClicked()));
     connect(ui->doneEditButton, SIGNAL(clicked()), this, SLOT(myProfileClicked()));
+    connect(ui->mainMenuButton, SIGNAL(clicked()), this, SLOT(mainMenuClicked()));
+    connect(ui->mainMenuButton_2, SIGNAL(clicked()), this, SLOT(mainMenuClicked()));
+    connect(ui->friendProfileButton, SIGNAL(clicked()), this, SLOT(friendProfileClicked()));
+    //connect(ui->addFriendButton, SIGNAL(clicked()), this, SLOT(addFriendClicked()));
 }
 
 MainWindow::~MainWindow()
@@ -46,6 +50,11 @@ void MainWindow::registerClicked()
     ui->pageSwitcher->setCurrentIndex(3);
 }
 
+void MainWindow::mainMenuClicked()
+{
+     ui->pageSwitcher->setCurrentIndex(3);
+}
+
 void MainWindow::homeClicked()
 {
     ui->pageSwitcher->setCurrentIndex(0);
@@ -66,7 +75,17 @@ void MainWindow::friendSearchClicked()
     ui->pageSwitcher->setCurrentIndex(6);
 }
 
+/*void MainWindow::addFriendClicked()
+{
+    ui->pageSwitcher->setCurrentIndex(6);
+}*/
+
 void MainWindow::editProfileButtonClicked()
 {
     ui->pageSwitcher->setCurrentIndex(5);
+}
+
+void MainWindow::friendProfileClicked()
+{
+    ui->pageSwitcher->setCurrentIndex(6);
 }
