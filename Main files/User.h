@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class User {
-    string email = "";
-    string passowrd = "";
-    string userName = "";
+    string email;
+    string passowrd;
+    string userName;
     // Profile Profile; 
-    bool isLoggendIn = true;
+    bool isLoggendIn;
     public: 
     User();
     void changeProfile();

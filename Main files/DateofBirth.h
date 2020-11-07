@@ -6,4 +6,4 @@ struct DateofBirth
     int Month;
     int Day;
     
-}DateofBirth;
+};

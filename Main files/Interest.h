@@ -7,4 +7,4 @@ struct Interests
     bool netflix;
     bool photography;
     bool study;
-}Interests;
+};
