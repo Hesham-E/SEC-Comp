@@ -4,16 +4,31 @@
 
 #include "DateofBirth.h"
 #include "Friends.h"
-#include "Interst.h"
-#include "Post.h"
-
-sing namespace std;
+#include "Interest.h"
 
 
-#ifndef FLIGHT
-#define FLIGHT
-
-class 
+using namespace std;
 
 
-#endif
+class Post {
+    int numOfLikes;
+    int numOfDislikes;
+    vector <string> posts;
+
+    public:
+    Post();
+    Post(int numOfLikes, int numOfDislikes, vector<string> posts);
+    
+    vector <string> getPosts() {return posts; };
+    int getNumOfLikes() { return numOfLikes;};
+    int getNumOfDislikes() { return numOfDislikes; };
+  
+    void createPost(string postText);
+    
+};
+
+
+
+
+
+

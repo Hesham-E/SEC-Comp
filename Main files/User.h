@@ -1,5 +1,7 @@
+#pragma once
 #include <iostream>
 #include <string>
+#include <Profile.h>
 
 using namespace std;
 
@@ -7,19 +9,18 @@ class User {
     string email;
     string password;
     string userName;
-    // Profile Profile; 
+    Profile profile;   // can u take a look at post.h and post.cpp its done
     bool isLoggendIn;
     public: 
     User();
     User(string email, string password, string userName );
     
-    const string& getEmail() const;
-    const string& getPassword() const;
-    const string& getUserName () const;
+    const string& getEmail() const { return email;}
+    const string& getPassword() const { return password;}
+    const string& getUserName () const { return userName;}
 
-    void setEmail(string email);
-    void setPassword(string password);
-    void setUserName(string username);
+    void setEmail(string email){ this->email.assign(email);}
+    void setPassword(string password) { this->password.assign(password);}
+    void setUserName(string username){ userName.assign(username);}
 
-    void changeProfile();
 };

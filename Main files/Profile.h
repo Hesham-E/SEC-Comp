@@ -1,15 +1,17 @@
-#include <iostream>
+#pragma once
+#include <iostream> 
 #include <string>
 #include <vector>
 
 #include "Friends.h"
 #include "Post.h"
+#include "Network.h"
 
 using namespace std;
 
 
-#ifndef FLIGHT
-#define FLIGHT
+//#ifndef FLIGHT
+//#define FLIGHT
 
 class Profile {
 private:
@@ -36,14 +38,15 @@ private:
     DateofBirth birth;
     Interest interest;
     
-    vector <Post> P;
-    vector <Friends> P;
+    vector <Post> posts;
+    vector <Friends> friends;
+    vector <Friends> fuggestedFriends
     
-    Network& net;
+    Network net;
     
 public:
     Profile();
-    Profile(string name, string location, string bio, DateofBirth birth, Interest interest, Network& net);
+    Profile(string name, string location, string bio, DateofBirth birth0, Interest interest0, Network net0 );
     
     void setName(string s) { name.assign(s); }
     void setLocation(string s) { location.assign(s); }
@@ -61,4 +64,4 @@ public:
 };
 
 
-#endif
+//#endif
